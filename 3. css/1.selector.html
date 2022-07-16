@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Judul Dokumen</title>
+    <style>
+        /* Semua elemen span */
+        /* span {
+            color: red;
+        }
+
+        .red {
+            color: red;
+        }
+
+        .skyblue-bg {
+            background-color: skyblue;
+        }
+
+        .fancy {
+            font-weight: bold;
+            text-shadow: 4px 4px 3px #77f;
+        }
+
+        #special {
+            background-color: skyblue;
+        } */
+
+        /* Attribute Selector */
+        a[href] {
+            color: blue;
+        }
+
+        a[href^="#"] {
+            background-color: gold;
+        }
+
+        a[href*="example"] {
+            background-color: silver;
+        }
+
+        a[href*="insensitive" i] {
+            color: cyan;
+        }
+
+        a[href$=".org"] {
+            color: red;
+        }
+
+        * {
+            color: green;
+        }
+
+        *[lang^=en] {
+            font-style: italic;
+        }
+
+        *.warning {
+            color: red;
+        }
+
+        *#content {
+            border: 1px solid blue;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <h1>Type Selector</h1>
+    <!-- <span>Ini merupakan sebuah teks yang berada pada elemen span. Seharusnya elemen ini ditampilkan dengan warna teks
+        merah.</span>
+    <p>Ini merupakan sebuah teks yang berada pada elemen paragraf, teks ini tidak seharusnya tidak akan terpengaruh oleh
+        rule.</p>
+    <span>Ini merupakan sebuah teks yang berada pada elemen span lainnya. Seharusnya elemen ini ditampilkan dengan warna
+        teks merah juga.</span> -->
+
+
+    <h1>Class Selector</h1>
+    <!-- <p class="red">Paragraf dengan teks berwarna merah</p>
+    <p class="skyblue-bg">Paragraf dengan background berwarna biru langit</p>
+    <p class="fancy">Paragraf dengan gaya fancy</p>
+    <p>Paragraf yang menampilkan teks dengan warna standar tanpa menerapkan styling</p> -->
+
+
+    <h1>ID Selector</h1>
+    <!-- <div id="special">
+        <p>Ini merupakan konten di dalam sebuah div yang diberi id special.</p>
+    </div>
+    <div>
+        <p>Ini merupakan konten di dalam sebuah div biasa.</p>
+    </div> -->
+
+
+    <h1>Attribute Selector</h1>
+    <ul>
+        <ul>
+            <li><a href="#internal">Internal link</a></li>
+            <li><a href="http://example.com">Example link</a></li>
+            <li><a href="#InSensitive">Insensitive internal link</a></li>
+            <li><a href="http://example.org">Example org link</a></li>
+        </ul>
+    </ul>
+
+
+    <h1>Universal Selector</h1>
+    <p>
+        Ini merupakan paragraf biasa atau tidak menerapkan atribut apapun. Maka teks pada paragraf ini akan berwarna
+    </p>
+    <p lang="en-us">
+        This is an English paragraph contains en-us value of lang attribute, so this text will be green and
+        italic.
+    </p>
+
+    <h1>Ini merupakan sebuah header biasa</h1>
+    <h1 lang="en-us">This is an English Header</h1>
+
+    <p class="warning">
+        Perhatikan paragraf ini! Paragraf ini merupakan paragraf yang memiliki kelas bernilai warning,
+        sehingga teks dari paragraf ini akan berwarna merah
+    </p>
+
+    <div id="content">
+        <p>
+            Ini merupakan sebuah teks di dalam sebuah div yang memiliki id bernilai "content", seharusnya paragraf ini
+            dibungkus dalam border yang memiliki padding 20px
+        </p>
+    </div>
+</body>
+
+</html>
