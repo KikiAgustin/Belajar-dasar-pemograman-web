@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Pseudo Selector</title>
+
+    <style>
+        /* rule akan diterapkan pada sebuah tautan yang belum pernah dikunjungi */
+        a:link {
+            color: red;
+        }
+
+        /* rule akan diterapkan pada sebuah tautan yang sudah pernah dikunjungi */
+        a:visited {
+            color: green;
+        }
+
+        /* rule akan diterapkan pada sebuah tautan ketika diarahkan dengan kursor */
+        a:hover {
+            color: pink;
+        }
+
+        /* rule akan diterapkan pada sebuah tautan ketika ditekan */
+        a:active {
+            color: orange;
+        }
+
+        /* Contoh Pseudo Selector */
+        p::first-letter {
+            font-size: 32px;
+            font-weight: bold;
+            color: saddlebrown;
+        }
+    </style>
+
+</head>
+
+
+<body>
+
+    <h1>Pseudo Class</h1>
+    <p>Contoh penggunaan adalah a:hover</p>
+
+    <h1>Pseudo Selector</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto deserunt, dicta laudantium quae quam sequi
+        soluta vitae! A, architecto beatae, consequuntur et eveniet fuga laudantium molestias praesentium temporibus,
+        unde
+        velit.</p>
+
+</body>
+
+</html>

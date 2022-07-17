@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Combinator</title>
+
+    <style>
+        /* Adjacent Sibling Selector (+)*/
+        img+p {
+            color: green;
+        }
+
+        /* General Sibling Selector (~) */
+        img~p {
+            color: green;
+        }
+
+        /* Child Selector (>) */
+        div>p {
+            background-color: yellow;
+        }
+
+        /* Descendant Selector (Space) */
+        div p {
+            background-color: yellow;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1>Adjacent Sibling Selector (+)</h1>
+    <!-- <p>Ini merupakan paragraf pertama. Rule styling tidak akan diterapkan pada elemen paragraf ini.</p>
+    <img src="https://i.imgur.com/cs2BJzw.jpg" alt="Dicoding logo" width="400px">
+    <p>Ini merupakan paragraf kedua dan ditetapkan setelah elemen gambar. Maka paragraf ini seharusnya menerapkan rule
+        dengan menampilkan teks berwarna hijau.</p>
+    <p>Ini merupakan paragraf ketiga. Letaknya memang setelah elemen gambar, namun tidak diletakkan persis setelahnya,
+        sehingga rule tidak akan diterapkan pada elemen ini.</p> -->
+
+
+    <h1>General Sibling Selector (~)</h1>
+    <!-- <p>Ini merupakan paragraf pertama. Rule styling tidak akan diterapkan pada elemen paragraf ini.</p>
+    <img src="https://i.imgur.com/cs2BJzw.jpg" alt="Dicoding logo" width="400px">
+    <p>Ini merupakan paragraf kedua dan ditetapkan setelah elemen gambar. Maka paragraf ini menerapkan rule dengan
+        menampilkan teks berwarna hijau.</p>
+    <div>
+        <p>Ini merupakan paragraf ketiga, letaknya setelah elemen gambar, namun paragraf ini dibungkus di dalam div
+            sehingga paragraf ini tidak akan menerapkan rule styling karena tidak memiliki induk yang sama.</p>
+    </div>
+    <p>Ini merupakan paragraf empat. Letaknya memang setelah elemen gambar dan memiliki induk yang sama seperti elemen
+        gambar, sehingga elemen ini akan menerapkan rule dengan menampilkan teks berwarna hijau.</p> -->
+
+
+    <h1>Child Selector (>)</h1>
+    <!-- <div>
+        <p>Paragraf pertama. di dalam div.</p>
+        <p>Paragraf kedua. di dalam div.</p>
+        <section>
+            <p>Paragraf ketiga. di dalam div namun bukan sebagai anak elemen secara langsung.</p>
+        </section>
+        <p>Paragraf keempat. di dalam div.</p>
+    </div>
+    <p>Paragraf kelima. di luar div.</p>
+    <p>Paragraf keenam. di luar div.</p> -->
+
+    <h1>Descendant Selector (Space)</h1>
+    <div>
+        <p>Paragraf pertama. di dalam div.</p>
+        <p>Paragraf kedua. di dalam div.</p>
+        <section>
+            <p>Paragraf ketiga. di dalam div walaupun bukan sebagai anak elemen secara langsung, namun termasuk dalam
+                turunannya.</p>
+        </section>
+        <p>Paragraf keempat. di dalam div.</p>
+    </div>
+    <p>Paragraf kelima. di luar div.</p>
+    <p>Paragraf keenam. di luar div.</p>
+
+
+
+
+</body>
+
+</html>
