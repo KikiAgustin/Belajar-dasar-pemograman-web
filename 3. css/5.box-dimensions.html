@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <style>
+        .box {
+            height: 300px;
+            width: 300px;
+            background-color: #11C5C6;
+        }
+
+        . box p {
+            height: 75%;
+            width: 75%;
+            background-color: #FBDD1C;
+        }
+
+        .content {
+            max-width: 800px;
+            height: 400px;
+            margin: 0 auto;
+            background-color: deeppink;
+        }
+
+        .content p {
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+
+        .overflow {
+            height: 200px;
+            width: 200px;
+            background-color: lightgreen;
+            margin-bottom: 60px;
+        }
+
+        .box-model {
+            height: 200px;
+            width: 200px;
+            background-color: lightgreen;
+            border: 10px solid cornflowerblue;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Box Dimensions</h1>
+    <div class="box">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus officiis perspiciatis quidem ratione?
+            Distinctio eos ex expedita iusto necessitatibus velit, veritatis. Aliquid, debitis dignissimos in iusto
+            magnam nulla sed tempora.</p>
+    </div>
+
+    <h1>Limiting Dimensions</h1>
+    <div class="content">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est sequi necessitatibus laboriosam fugit quia
+            culpa. Maiores tenetur similique porro iusto ad amet quas eaque laudantium ipsum! Rem, adipisci alias. Eum
+            voluptatum maxime ad placeat aspernatur? Aperiam doloribus ex cumque hic.</p>
+    </div>
+
+    <h1>Overflowing Content</h1>
+    <div style="overflow: visible  ;" class="overflow">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam ipsum velit corporis esse quo asperiores et
+            atque vitae temporibus iure, nemo placeat omnis non dicta nobis, aliquid nam veniam rerum optio. Beatae
+            consequatur, non deserunt accusamus iusto, sit dolor quidem hic ducimus dolorum expedita quas architecto
+            neque quasi! Placeat, labore!</p>
+    </div>
+
+    <div style="overflow: hidden  ;" class="overflow">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam ipsum velit corporis esse quo asperiores et
+            atque vitae temporibus iure, nemo placeat omnis non dicta nobis, aliquid nam veniam rerum optio. Beatae
+            consequatur, non deserunt accusamus iusto, sit dolor quidem hic ducimus dolorum expedita quas architecto
+            neque quasi! Placeat, labore!</p>
+    </div>
+
+    <div style="overflow: scroll  ;" class="overflow">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam ipsum velit corporis esse quo asperiores et
+            atque vitae temporibus iure, nemo placeat omnis non dicta nobis, aliquid nam veniam rerum optio. Beatae
+            consequatur, non deserunt accusamus iusto, sit dolor quidem hic ducimus dolorum expedita quas architecto
+            neque quasi! Placeat, labore!</p>
+    </div>
+
+    <div style="overflow: auto  ;" class="overflow">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam ipsum velit corporis esse quo asperiores et
+            atque vitae temporibus iure, nemo placeat omnis non dicta nobis, aliquid nam veniam rerum optio. Beatae
+            consequatur, non deserunt accusamus iusto, sit dolor quidem hic ducimus dolorum expedita quas architecto
+            neque quasi! Placeat, labore!</p>
+    </div>
+
+
+    <h1>Box-sizing</h1>
+    <div style="box-sizing:border-box;" class="box-model">
+    </div>
+
+    <p>Elemen menerapkan <code>box-sizing: content-box;</code> Ukuran box secara keseluruhan akan menjadi 260px lebar,
+        260px tinggi; 260 = 200 + 20 + 20 + 10 + 10</p>
+
+    <div style="box-sizing:border-box;" class="box-model"></div>
+    <p>Elemen menerapkan <code>box-sizing: border-box;</code> Ukuran box akan tetap 200px lebar, 200px tinggi meskipun
+        menerapkan padding dan border</p>
+</body>
+
+</html>
