@@ -1,76 +1,113 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
+@import url(https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap);
+
+header,
+nav li {
+    display: inline
+}
+
+.card,
+footer,
+main {
+    padding: 20px
+}
+
+.jumbotron,
+footer {
+    color: #fff;
+    text-align: center
+}
+
+footer,
+nav {
+    background-color: #00a2c6
+}
+
+.jumbotron,
+.profile header,
+footer {
+    text-align: center
+}
+
+footer,
+nav a:hover {
+    font-weight: 700
+}
+
+* {
+    box-sizing: border-box
+}
 
 body {
-    font-family: 'Quicksand', sans-serif;
+    font-family: Quicksand, sans-serif;
     margin: 0;
-    padding: 0;
+    padding: 0
 }
 
 nav {
-    background-color: #00a2c6;
     padding: 5px;
+    position: sticky;
+    top: 0
 }
 
 nav a {
     font-size: 18px;
     font-weight: 400;
-    text-decoration: none;
-}
-
-nav a:hover {
-    font-weight: bold;
+    text-decoration: none
 }
 
 nav li {
-    display: inline;
     list-style-type: none;
-    margin-right: 20px;
-}
-
-.profile header {
-    text-align: center;
+    margin-right: 20px
 }
 
 main {
-    padding: 20px;
+    overflow: auto
 }
 
 h2,
 h3 {
-    color: #00a2c6;
+    color: #00a2c6
 }
 
 .featured-image {
     width: 100%;
     max-height: 300px;
     object-fit: cover;
-    object-position: center;
+    object-position: center
 }
 
 .card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .2);
     border-radius: 5px;
-    padding: 20px;
-    margin-top: 20px;
+    margin-top: 20px
 }
 
 .profile img {
-    width: 200px;
+    width: 200px
 }
 
 .jumbotron {
     padding: 60px;
     background-color: #00c8eb;
-    text-align: center;
-    font-size: 20px;
-    color: #fff;
+    font-size: 20px
 }
 
+#content {
+    float: left;
+    width: 75%
+}
 
-footer {
-    padding: 20px;
-    color: white;
-    background-color: #00a2c6;
-    text-align: center;
-    font-weight: bold;
+aside {
+    float: right;
+    width: 25%;
+    padding-left: 20px
+}
+
+@media (max-width:1000px) {
+
+    #content,
+    aside {
+        width: 100%;
+        padding: 0
+    }
 }
