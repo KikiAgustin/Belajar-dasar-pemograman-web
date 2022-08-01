@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@400;600&family=Lora:ital,wght@0,400;0,500;0,600;1,600&family=Quicksand:wght@400;700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lora', 'Cabin', sans-serif;
+}
+
+nav {
+    display: flex;
+    background-color: #A9DFE2;
+    justify-content: space-around;
+}
